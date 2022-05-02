@@ -5,7 +5,7 @@ import { clearCart } from '../features/cart/cartSlice'
 const CartContainer = () => {
     const dispatch = useDispatch();
     const {amount,total,cartItems} = useSelector(state=>state.cart)
-
+   
     if (amount < 1) {
         return (
           <section className='cart'>
